@@ -1,0 +1,88 @@
+/* HOME */
+header{
+    min-height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-size: min(19vw, 300px);
+    line-height: 10rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 10rem;
+    transform: scaleY(1.5);
+    letter-spacing: 0.5rem;
+    z-index: -1;
+    position: relative;
+}
+
+.bajada{
+    display: flex;
+    margin-top: 6rem;
+}
+
+.bajada > div{
+    flex: 1;
+}
+
+.bajada > div > h2{
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.bajada__social > ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.4rem;
+    gap: 2rem;
+}
+
+.btn__scroll{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    translate: -50%;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: min(18vw, 300px);
+        padding-top: 5rem;
+        line-height: 5rem;
+    }
+
+    .bajada > div > h2{
+        font-size: var(--font-size-xl);
+        text-align: center;
+    }
+    address{
+        text-align: center;
+    }
+    .bajada__social > ul{
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: min(14vw, 300px);
+        letter-spacing: 6px;
+        padding-top: 3rem;
+    }
+    .bajada {
+        display: flex;
+        margin-top: 4rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,39 @@
+.experience {
+    margin-top: 4rem;
+}
+
+.experience > li{
+    border-right: 1px solid var(--light-neutral-700);
+    padding: .5rem 0;
+}
+
+.experience > li:not(:first-child) {
+    margin-top: 4rem;
+}
+
+.experience__date {
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--light-neutral-600);
+}
+
+.experience__company {
+    margin-top: 1.2rem;
+    font-size: var(--font-size-xl);
+    color: var(--light-neutral-100);
+}
+
+.experience__rol {
+    font-size: var(--font-size-md);
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--light-neutral-400);
+}
+
+.experience__descrip{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--light-neutral-500);
+    max-width: 85%;
+    font-size: var(--font-size-sm);
+}

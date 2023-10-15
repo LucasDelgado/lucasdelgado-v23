@@ -1,0 +1,50 @@
+.nav{
+    position: sticky;
+    top: 15rem;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.nav > a{
+    color:#464646;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav > a:hover{
+    color: #3e3e3e;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav > .active, .nav > .active:hover{
+    color: var(--light-neutral-200);
+}
+
+.btn__contact{
+    border: 1px solid var(--light-neutral-700);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #0d0d0d;
+    padding: 1.2rem;
+    border-radius: 50%;
+    z-index: 90000;
+    cursor: pointer;
+}
+
+.btn__contact svg{
+    position: relative;
+    top: 0.2rem;
+}
+
+@media screen and (max-width: 767px){
+    .nav{ 
+        font-size: 1.5rem;
+        flex-direction: row;
+        transform: rotate(270deg) translateX(2rem) translateY(-10px);
+        gap: 2.5rem;
+        flex-direction: row-reverse;
+    }
+}
