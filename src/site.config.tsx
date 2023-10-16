@@ -52,14 +52,14 @@ export const SiteConfig = {
         },
         {
           rol: "Frontend developer",
-          company: "IdForYou Agencia Digital",
+          company: "IdForYou Digital Agency",
           date: ["01/16", "08/16"],
           description:
             "It was a short-lived experience because I was given the opportunity to migrate to a larger company. Here, I did responsive layout work and worked with WordPress. We used some libraries like Bootstrap, jQuery, and others.",
         },
         {
           rol: "Full Stack Product Developer",
-          company: "lucasdelgado.com",
+          company: "lucasdelgado.dev",
           date: ["2015", ""],
           description:
             "This was the beginning of my career, my own website where I sold digital products such as SEO, websites, design, digital marketing consulting, and more. During this stage, I was in charge of the entire project, including client communication, design, product development, programming, and more. It was a great and enriching experience.",
