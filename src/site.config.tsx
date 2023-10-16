@@ -27,7 +27,7 @@ export const SiteConfig = {
     description: "I'm a Full Stack Developer based in Buenos Aires, Argentina.",
   },
   main: {
-    title: "Lucas Delgdo",
+    title: "Lucas Delgado",
     rol: "FullStack Developer",
     description: "I'm a Full Stack Developer based in Buenos Aires, Argentina.",
     email: "lucas.matias.delgado@gmail.com",
