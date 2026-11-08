@@ -28,9 +28,14 @@ export default function Nav() {
                     })
                 }
             </nav>
-        <a  className="btn__contact" onClick={scrollToBottom}>
+        <button
+            type="button"
+            className="btn__contact"
+            onClick={scrollToBottom}
+            aria-label="Go to contact section"
+        >
             <ContactSVG />
-        </a>
+        </button>
         </>
     )
 }

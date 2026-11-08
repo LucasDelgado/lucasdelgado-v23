@@ -1,5 +1,6 @@
 import {
   AgileSVG,
+  CicdSVG,
   CssSVG,
   DataDogSVG,
   FigmaSVG,
@@ -14,6 +15,7 @@ import {
   NextSVG,
   NodeSVG,
   PdfSVG,
+  ReactNativeSVG,
   ReactSVG,
   RelicSVG,
   UxSVG,
@@ -71,7 +73,7 @@ export const SiteConfig = {
       main: {
         title: "System Analist",
         inst: "ORT Institute",
-        date: ["06/2020","-", "present"],
+        date: ["06/2020", "present"],
       },
       courses: [
         {
@@ -152,7 +154,7 @@ export const SiteConfig = {
       },
       {
         title: "CI / CD",
-        component: <AgileSVG />,
+        component: <CicdSVG />,
       },
       {
         title: "Next.js",
@@ -164,7 +166,7 @@ export const SiteConfig = {
       },
       {
         title: "ReactNative",
-        component: <ReactSVG />,
+        component: <ReactNativeSVG />,
       },
       {
         title: "DataDog",
