@@ -49,6 +49,6 @@
         font-size: 2rem;
     }
     .footer__subtitle {
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-lg);
     }
   }

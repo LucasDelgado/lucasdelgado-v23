@@ -9,15 +9,15 @@ export default function Education() {
             <div className="education__main">
                 <p className="education__main__title">{main?.title}</p>
                 <p className="education__main__inst">{main?.inst}</p>
-                <p className="education__main__date">{main?.date}</p>
+                <p className="education__main__date">{main?.date.join(" - ")}</p>
             </div>
             <div className="education__courses">
                 <p className="education__courses__title">Courses</p>
                 <ul className="education__courses__list">
                 {
-                    courses?.map((course, index) => {
+                    courses?.map((course) => {
                         return(
-                            <li key={index}>
+                            <li key={course.title}>
                                 <p className="education__courses__list__title">{course.title}</p>
                                 <p className="education__courses__list__inst">{course.inst}</p>
                                 <p className="education__courses__list__date">{course.date}</p>

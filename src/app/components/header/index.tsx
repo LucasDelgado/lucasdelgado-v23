@@ -1,7 +1,7 @@
 'use client'
 import { Bebas_Neue } from "next/font/google";
 import { SiteConfig } from "../../../site.config";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const bebasNeue = Bebas_Neue({
     display: "swap",
@@ -25,7 +25,14 @@ export default function Header() {
                                 SiteConfig.sections.contact.map((item) => {
                                     return (
                                         <li key={item.link}>
-                                            <a href={item.link} target="_blank">{item.component}</a>
+                                            <a
+                                                href={item.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={item.title}
+                                            >
+                                                {item.component}
+                                            </a>
                                         </li>
                                     )
                                 })

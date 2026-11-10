@@ -17,7 +17,13 @@ export default function Footer() {
                             SiteConfig.sections.contact.map((item) => {
                                 return (
                                     <li key={item.link}>
-                                        <a href={item.link} target="_blank">{item.title}</a>
+                                        <a
+                                            href={item.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {item.title}
+                                        </a>
                                     </li>
                                 )
                             })

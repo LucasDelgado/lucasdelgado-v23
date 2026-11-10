@@ -1,8 +1,10 @@
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/react';
-import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata, Viewport } from "next";
 import { Encode_Sans_SC } from "next/font/google";
 import { SiteConfig } from "../site.config";
+
+const siteUrl = "https://www.lucasdelgado.dev";
 
 const font = Encode_Sans_SC({
   display: "swap",
@@ -11,15 +13,23 @@ const font = Encode_Sans_SC({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: SiteConfig.metadata.title,
   description: SiteConfig.metadata.description,
-  viewport: "width=device-width, initial-scale=1",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     title: SiteConfig.main.title,
     description: SiteConfig.main.description,
-    url: "https://lucasdelgado.com",
+    url: siteUrl,
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
