@@ -25,12 +25,12 @@ import {
 export const SiteConfig = {
   defaultLanguage: "en",
   metadata:{
-    title: "Lucas Delgado FullStack Developer",
+    title: "Lucas Delgado | Full Stack Developer",
     description: "I'm a Full Stack Developer based in Buenos Aires, Argentina.",
   },
   main: {
     title: "Lucas Delgado",
-    rol: "FullStack Developer",
+    rol: "Full Stack Developer",
     description: "I'm a Full Stack Developer based in Buenos Aires, Argentina.",
     email: "lucas.matias.delgado@gmail.com",
   },
@@ -39,41 +39,41 @@ export const SiteConfig = {
       title: "Experienc<span class='main-color'>e</span>",
       list: [
         {
-          rol: "Full Stack developer",
+          rol: "Full Stack Developer",
           company: "Mercado Libre",
-          date: ["10/22", "present"],
+          date: ["10/2022", "Present"],
           description:
-            "I am currently working at this great company. I lead and serve as a reference in several projects, both on the backend and frontend. I participate in projects with a backend in Node.js with TypeScript and in Golang. Connecting projects to a Big Queue with more than 50k rpm news deliveries. We work with REST APIs and middlewares. On the frontend, we build and maintain projects in React with TypeScript. In addition to working on the infrastructure and metrics of each project.",
+            "I currently work at Mercado Libre, where I lead several projects and act as a reference across both backend and frontend. I work on projects with backends built in Node.js with TypeScript and in Go, connecting projects to a Big Queue that handles more than 50k news deliveries per minute. We work with REST APIs and middleware. On the frontend, we build and maintain React projects with TypeScript. I also work on the infrastructure and metrics of each project.",
         },
         {
-          rol: "Full Stack developer",
+          rol: "Full Stack Developer",
           company: "La Nación Newspaper",
-          date: ["08/16", "10/22"],
+          date: ["08/2016", "10/2022"],
           description:
-            "I had the great opportunity to work at this company and learn a lot. Here, I experienced significant professional growth. I started on the web layout and complex CSS3 effects team. Over time, I evolved to become a FullStack developer. I eventually led projects such as the new login and the paywall. I gained a lot of experience in team management and soft skills. Additionally, as it is a news outlet where SEO is important, we received thorough education on that front. The technologies used were React, Node.js, both with TypeScript, and some .NET.",
+            "I had the great opportunity to work at La Nación and learn a great deal. I experienced significant professional growth there. I started on the team responsible for web layout and complex CSS3 effects. Over time, I grew into a Full Stack Developer and eventually led projects such as the new login system and the paywall. I gained substantial experience in team management and soft skills. Additionally, since La Nación is a news outlet where SEO is critical, we received in-depth training on the subject. The technologies we used were React and Node.js, both with TypeScript, and some .NET.",
         },
         {
-          rol: "Frontend developer",
+          rol: "Frontend Developer",
           company: "IdForYou Digital Agency",
-          date: ["01/16", "08/16"],
+          date: ["01/2016", "08/2016"],
           description:
-            "It was a short-lived experience because I was given the opportunity to migrate to a larger company. Here, I did responsive layout work and worked with WordPress. We used some libraries like Bootstrap, jQuery, and others.",
+            "It was a short-lived experience, as I was given the opportunity to move to a larger company. There, I worked on responsive layouts and with WordPress. We used libraries such as Bootstrap and jQuery.",
         },
         {
           rol: "Full Stack Product Developer",
           company: "lucasdelgado.dev",
           date: ["2015", ""],
           description:
-            "This was the beginning of my career, my own website where I sold digital products such as SEO, websites, design, digital marketing consulting, and more. During this stage, I was in charge of the entire project, including client communication, design, product development, programming, and more. It was a great and enriching experience.",
+            "This was the beginning of my career: my own business, where I offered digital services such as SEO, website development, design, and digital marketing consulting. At this stage, I was responsible for the entire project, from client communication and design to product development and programming. It was a great and enriching experience.",
         },
       ],
     },
     education: {
       title: "Educatio<span class='main-color'>n</span>",
       main: {
-        title: "System Analist",
-        inst: "ORT Institute",
-        date: ["06/2020", "present"],
+        title: "Systems Analyst",
+        inst: "ORT Argentina",
+        date: ["06/2020", "Present"],
       },
       courses: [
         {
@@ -87,7 +87,7 @@ export const SiteConfig = {
           date: "2019",
         },
         {
-          title: "Node.JS",
+          title: "Node.js",
           inst: "IT Education",
           date: "2017",
         },
@@ -120,12 +120,12 @@ export const SiteConfig = {
         link: "https://www.linkedin.com/in/lucas-delgado-692340107/",
       },
       {
-        title: "Mail",
+        title: "Email",
         component: <MailSVG />,
         link: "mailto:lucas.matias.delgado@gmail.com",
       },
       {
-        title: "CV.PDF",
+        title: "CV (PDF)",
         component: <PdfSVG />,
         link: "Lucas_Delgado_CV.pdf",
       },
@@ -161,19 +161,19 @@ export const SiteConfig = {
         component: <NextSVG />,
       },
       {
-        title: "Golang",
+        title: "Go",
         component: <GoSVG />,
       },
       {
-        title: "ReactNative",
+        title: "React Native",
         component: <ReactNativeSVG />,
       },
       {
-        title: "DataDog",
+        title: "Datadog",
         component: <DataDogSVG />,
       },
       {
-        title: "NewRelic",
+        title: "New Relic",
         component: <RelicSVG />,
       },
       {

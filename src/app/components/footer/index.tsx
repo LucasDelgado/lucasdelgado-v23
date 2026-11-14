@@ -7,8 +7,8 @@ export default function Footer() {
         <footer className="footer">
             <div className="container">
                 <div>
-                    <h2 className="footer__title">Lucas Delgado</h2>
-                    <p  className="footer__subtitle">FullStack Developer</p>
+                    <h2 className="footer__title">{SiteConfig.main.title}</h2>
+                    <p  className="footer__subtitle">{SiteConfig.main.rol}</p>
 
                 </div>
                 <div>

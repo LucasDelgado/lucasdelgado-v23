@@ -150,6 +150,21 @@ referencialo en `site.config.tsx`.
 - El CV se linkea relativo (`Lucas_Delgado_CV.pdf`) y se sirve desde `public/`.
 - Los links externos abren con `target="_blank"` + `rel="noopener noreferrer"`.
 
+## Git, commits y despliegue
+
+- **Nunca** hacer `git commit`, `git push` ni abrir un PR por cuenta propia.
+  Mostrar los cambios y esperar confirmación explícita del usuario.
+- Una vez confirmado, no commitear sobre `master`: crear o usar la rama
+  `develop`, commitear y pushear ahí.
+- Abrir un PR de `develop` hacia `master` para que el usuario lo revise. No
+  mergear ni desplegar sin su aprobación.
+- El sitio se despliega en Vercel; `master` es la rama de producción y publica
+  en `https://www.lucasdelgado.dev`.
+- Antes de commitear, correr `npm run typecheck`, `npm run lint` y
+  `npm run build`.
+- Mensajes de commit en inglés, modo imperativo y cortos (por ejemplo,
+  `Fix spelling and grammar in site content`).
+
 ## Deuda técnica pendiente
 
 1. No hay tests automatizados ni CI.

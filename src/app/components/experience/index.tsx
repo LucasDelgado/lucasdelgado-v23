@@ -9,7 +9,9 @@ export default function Experience() {
                 experiences.map((item) => {
                     return (
                         <li key={item.company} >
-                            <p className="experience__date" >{item.date[0]} - {item.date[1]}</p>
+                            <p className="experience__date" >
+                                {item.date[0]}{item.date[1] ? ` - ${item.date[1]}` : ""}
+                            </p>
                             <p className="experience__company">{item.company}</p>
                             <p className="experience__rol">{item.rol}</p>
                             <p className="experience__descrip">{item.description}</p>
