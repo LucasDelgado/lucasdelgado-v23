@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# lucasdelgado.dev
 
-## Getting Started
+Personal portfolio and CV for Lucas Delgado, Full Stack Developer. Single-page,
+static, content-driven landing built with Next.js and deployed on Vercel.
 
-First, run the development server:
+- Production: [https://www.lucasdelgado.dev](https://www.lucasdelgado.dev)
+- Repository: [github.com/LucasDelgado/lucasdelgado-v23](https://github.com/LucasDelgado/lucasdelgado-v23)
+
+## Stack
+
+- Next.js 16 (App Router, Turbopack)
+- React 19
+- TypeScript 5
+- Plain CSS (no Tailwind or CSS Modules)
+- `@vercel/analytics` and `react-scroll`
+
+Node `>= 20.9.0` is required.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run dev       # development server
+npm run build     # production build
+npm run start     # serve the production build
+npm run lint      # ESLint (flat config)
+npm run typecheck # tsc --noEmit
+```
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── site.config.tsx   # single source of truth for content and icons
+└── app/
+    ├── layout.tsx    # metadata, viewport, fonts, <Analytics />
+    ├── page.tsx      # header + nav + Experience/Education/Skills + footer
+    ├── globals.css
+    ├── page.css
+    ├── robots.txt
+    ├── sitemap.xml
+    └── components/   # one folder per component: index.tsx + style.css
+public/
+└── Lucas_Delgado_CV.pdf
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editing content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+All copy and data live in `src/site.config.tsx`: metadata, name and role,
+experience, education, contact links and skills. Components only render it.
 
-## Deploy on Vercel
+- If you rename a section, update both the `ArticleContent` title in
+  `src/app/page.tsx` and the matching entry in `SiteConfig.nav`; the nav anchor
+  IDs are generated from those titles.
+- Icons are inline SVG components exported from
+  `src/app/components/svg/index.tsx`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The site is deployed on Vercel. The canonical host is
+`https://www.lucasdelgado.dev` (the apex domain redirects to `www`).
+
+## Verification
+
+Before shipping, run:
+
+```bash
+npm run typecheck
+npm run lint
+npm run build
+```
+
+Then check the home page, anchor navigation, the contact button, social links,
+the CV download and the mobile layout (`< 768px`).

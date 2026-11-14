@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <main itemScope itemType="http://schema.org/LocalBusiness">
+      <main itemScope itemType="http://schema.org/Person">
         <Header />
         <section>
           <div className="container with-grid">
